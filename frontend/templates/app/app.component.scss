@@ -1,0 +1,22 @@
+/* login.component.scss */
+
+.full-width {
+  width: 100%;
+}
+
+.theme-toggle-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 1000;
+}
+
+.mat-card {
+  max-width: 400px;
+  margin: 0 auto;
+  margin-top: 100px;
+  text-align: center;
+}
+
+
+/* Add any additional styles you need here */

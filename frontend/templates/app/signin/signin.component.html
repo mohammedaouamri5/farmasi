@@ -1,0 +1,61 @@
+<!-- registration.component.html -->
+<div class="container" style="width: 100%;height: 100ex; background: linear-gradient(to right, #0c00ff, #00ffd3);">
+  <div class="row ">
+    <div class="col-lg-10 col-xl-9 mx-auto ">
+      <div class="card flex-row my-5 border-0 shadow rounded-3 overflow-hidden dark-theme">
+        <div class="card-img-left d-none d-md-flex dark-theme">
+          <!-- Background image for card set in CSS! -->
+        </div>
+        <div class="card-body p-4 p-sm-5">
+          <h5 class="card-title text-center mb-5 fw-light fs-5">Register</h5>
+          <form [formGroup]="userForm" (ngSubmit)="onSubmit()" >
+
+            <!-- Name Field -->
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="floatingInputName" placeholder="Your Name" required autofocus formControlName="name">
+              <label for="floatingInputName">Name</label>
+            </div>
+
+            <!-- Phone Number Field -->
+            <div class="form-floating mb-3">
+              <input type="tel" class="form-control" id="floatingInputnum" placeholder="Your Phone Number" required autofocus formControlName="num">
+              <label for="floatingInputnum">Phone Number</label>
+            </div>
+
+            <!-- Password Field -->
+            <div class="form-floating mb-3">
+              <input type="password" class="form-control" id="floatingPassword" placeholder="Password" required autofocus formControlName="password">
+              <label for="floatingPassword">Password</label>
+            </div>
+
+            <!-- Age Field -->
+            <div class="form-floating mb-3 ">
+              <input type="number" class="form-control" id="floatingInputAge" placeholder="Your Age" required autofocus formControlName="age">
+              <label for="floatingInputAge">Age</label>
+            </div>
+
+            <!-- Gender Radio Buttons -->
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="gender" id="maleGender" value="Male" required formControlName="gender">
+              <label class="form-check-label" for="maleGender">Male</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="gender" id="femaleGender" value="Female" required formControlName="gender">
+              <label class="form-check-label" for="femaleGender">Female</label>
+            </div>
+
+            <!-- Add code to extract user location if needed -->
+
+            <hr>
+
+            <div class="d-grid mb-2">
+              <button class="btn btn-lg btn-primary btn-login fw-bold text-uppercase" type="submit">Register</button>
+            </div>
+
+            <a class="d-block text-center mt-2 small" routerLink="/login" >If you have an account, go to Login</a>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
