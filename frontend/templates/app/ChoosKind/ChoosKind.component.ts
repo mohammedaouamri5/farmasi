@@ -5,11 +5,12 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './ChoosKind.component.html',
   styleUrls: ['./ChoosKind.component.css']
 })
-export class ChoosKindComponent implements OnInit {
+export class ChoosKindComponent   {
 
   constructor() { }
 
-  ngOnInit() {
+  onDivClick(Kind: string) {
+    console.log(Kind);
   }
 
 }

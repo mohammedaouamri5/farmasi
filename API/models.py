@@ -1,7 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
 
-#Docter , Pharmacist , pachent 
+#Doctor , Pharmacist , pachent 
 # Create your models here.
 
  

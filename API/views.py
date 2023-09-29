@@ -41,7 +41,7 @@ class LoginProfileView(APIView):
         serializer = self.serializer_class(data=request.data)
         print("----------------------------------------------------")
         print(serializer)
-        print("----------------------------------------------------")
+        print("-  ---- -------------- ---------------------------------")
 
         if serializer.is_valid():
             num = serializer.validated_data.get('num')
