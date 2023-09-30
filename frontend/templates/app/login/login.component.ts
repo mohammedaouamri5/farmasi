@@ -25,12 +25,13 @@ export class LoginComponent {
   }
   onSubmit() {
     console.log("this.userForm \n " , this.userForm.value );
-    if (this.userForm.valid)
+    if (this.userForm.valid){
+
       this.profileService.login(this.userForm.value).subscribe(
         (response) => { this.router.navigate(['/Me', this.userForm.value.num]);},
-        (error)    => { console.error('Error creating profile:', error)       ;}
+        (error)    => {  console.error('Error creating profile:', error)        ;}
       );
-
+}
     else
       console.error(this.userForm.errors);
 

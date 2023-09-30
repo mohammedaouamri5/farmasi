@@ -24,6 +24,6 @@ export class APIService {
     return this.http.get(`${this.apiUrl}/GetProfile?num=${num}`);
   }
   login(profileData: any): Observable<any> {
-    return this.http.get(`${this.apiUrl}/LoginProfile`, profileData);
+    return this.http.post(`${this.apiUrl}/LoginProfile`, profileData);
   }
 }
