@@ -4,6 +4,7 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { SigninComponent } from './signin/signin.component';
 import { ChoosKindComponent } from './ChoosKind/ChoosKind.component';
+import { MapComponent } from './map/map.component';
 
 const routes: Routes = [
   // {path : "" , component  : AppComponent } ,
@@ -17,7 +18,7 @@ const routes: Routes = [
   },
   {
     path : 'Me/:num' ,
-    component: ChoosKindComponent,
+    component: MapComponent,
 
   }
 ];

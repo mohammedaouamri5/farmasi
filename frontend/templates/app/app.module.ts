@@ -21,6 +21,7 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { SigninComponent } from './signin/signin.component';
 import { ChoosKindComponent } from './ChoosKind/ChoosKind.component';
+import { MapComponent } from './map/map.component';
  
 
 
@@ -30,7 +31,8 @@ import { ChoosKindComponent } from './ChoosKind/ChoosKind.component';
     AppComponent,
       LoginComponent,
       SigninComponent,
-      ChoosKindComponent
+      ChoosKindComponent,
+      MapComponent
    ],
   imports: [
     BrowserModule,

@@ -6,5 +6,5 @@ urlpatterns = [
     path('login/', index),
     path('create/', index),
     path('Me/<int:num>', index),
-    path('myProfile/<int:num>/<str:Kind>', index),
+    # path('myProfile/<int:num>/<str:Kind>', index),
 ]
